@@ -73,6 +73,9 @@ main {
   margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .tweet-show {
@@ -80,4 +83,12 @@ main {
   padding-right: 1em;
   border-bottom: 0.2em solid #545149;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fa {
+  color: #4056A1;
+}
+
+.fa:hover {
+  color: #ffd500;
 }
