@@ -1,11 +1,13 @@
 header {
-  height: 640px;
+  height: 520px;
   width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: #ffd500;
-background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
+  background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+

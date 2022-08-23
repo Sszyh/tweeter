@@ -62,13 +62,12 @@
   <!-- Page-specific (main) content here -->
   <main>
     <section class="new-tweet">
-
       <form method="POST" action="/tweets">
         <div>
           <label for="tweet-text">What are you humming about?</label>
         </div>
         <div>
-          <textarea class="textarea" name="text" id="tweet-text"></textarea>
+          <textarea name="text" id="tweet-text"></textarea>
         </div>
         <div class="tw-co">
           <button type="submit" class="tweet-button">Tweet</button>
@@ -77,6 +76,27 @@
       </form>
     </section>
 
+    <section class="tweet-container">
+      <article>
+        <header class="tweet-header">
+          <div class="img-and-name">
+            <img src="https://i.imgur.com/nlhLi3I.png" height="100%" style="padding-right: 0.4em">
+            <p>name</p>
+          </div>
+          <p class="img-and-name">@handle</p>
+        </header>
+
+
+        <div class="tweet-show">if I have seen further
+        </div>
+
+
+
+        <footer class="tweet-footer">
+          10 days ago
+        </footer>
+      </article>
+    </section>
   </main>
 
 </body>

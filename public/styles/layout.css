@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -29,4 +32,52 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+}
+
+.tweet-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f4f1ec;
+  background-image: none;
+  height: 4em;
+  
+}
+
+.img-and-name {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.tweet-container {
+  width: 100%;
+  margin: auto;
+  outline-style: solid;
+  outline-color: #545149;
+  outline-width: 0.2em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.tweet-footer {
+  width: 98%;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.8em;
+  margin: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: large;
+}
+
+.tweet-show {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-bottom: 0.2em solid #545149;
+  font-family: 'Source Sans Pro', sans-serif;
 }

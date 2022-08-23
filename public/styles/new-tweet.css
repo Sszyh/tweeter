@@ -4,6 +4,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .tweet-button {
@@ -20,12 +22,13 @@
 
 .tw-co {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0.5em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    padding-right: 0.4em;
 }
 
-.textarea {
+textarea {
   border-bottom: 0.2em solid #545149;
   border-top: 0px;
   border-right: 0px;
