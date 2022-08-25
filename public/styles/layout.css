@@ -57,11 +57,7 @@ main {
 .tweet-container {
   width: 100%;
   margin: auto;
-  outline-style: solid;
-  outline-color: #545149;
-  outline-width: 0.2em;
-  padding-right: 0.5em;
-  padding-left: 0.5em;
+  
 }
 
 .tweet-footer {
@@ -91,4 +87,13 @@ main {
 
 .fa:hover {
   color: #ffd500;
+}
+
+article {
+  outline-style: solid;
+  outline-color: #545149;
+  outline-width: 0.2em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  margin-top: 3em;
 }
