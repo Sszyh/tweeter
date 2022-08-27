@@ -44,7 +44,7 @@ $(document).ready(function () {
 
   const createTweetElement = function (tweetData) {
     const countDate = function (t) {
-      let date_1 = t.content.created_at;
+      let date_1 = t.created_at;
       let date_2 = new Date();
       let difference = date_1 - date_2.getTime();
       return TotalDays = -Math.ceil(difference / (1000 * 3600 * 24));
