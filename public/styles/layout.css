@@ -95,3 +95,21 @@ article {
   padding-left: 0.5em;
   margin-top: 3em;
 }
+
+.err {
+  display: none;
+  border-color:e63946 ;
+  border: 0.12em solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #ef233c;
+  padding: 0.5em;
+  margin-bottom: 1em;
+
+}
+
+.humming-err {
+  margin-top: 0.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

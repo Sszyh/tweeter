@@ -49,21 +49,23 @@ $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
     let a = $("#tweet-text").val();
-    console.log("a:", a);
-    $("textarea").focus(function() {
-      $('.err').hide("fast");
+   
+    $("textarea").focus(function () {
+      $('.err').hide("slow");
       $('.err').html('');
     })
     if (a.length === 0) {
-      //alert("Input should not be empty")
-      $('.err').show("fast");
-      $('.err').html('Input should not be empty');
+      $('.err').slideDown("slow");
+      return $('.err').html('🧶🧶🧶  Input should not be empty');
+    } else if (a.length > 140) {
+      $('.err').slideDown("slow");
+      return $('.err').html('🤐🤐🤐  Input should not be more than 140');
     }
     $.post("/tweets", $(this).serialize(), function () {
-      loadTweets();
-    
-    });
-  
+      loadTweets(); 
+      $("textarea").val("");
+    })
+
   });
 
   const loadTweets = function () {
