@@ -16,6 +16,12 @@ const renderTweets = function (tweets) {
 };
 
 const createTweetElement = function (tweetData) {
+  //create function to avoid Cross-Site Scripting(XSS)
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   let $tweet = /* creating the tweet element */
     `<article>
         <header class="tweet-header">
@@ -25,7 +31,7 @@ const createTweetElement = function (tweetData) {
           </div>
           <p class="img-and-name">${tweetData.user.handle}</p>
         </header>
-        <div class="tweet-show">${tweetData.content.text}
+        <div class="tweet-show">${escape(tweetData.content.text)}
         </div>
         <footer class="tweet-footer">
           <div>${timeago.format(tweetData.created_at)}</div>
