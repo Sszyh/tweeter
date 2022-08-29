@@ -68,9 +68,12 @@
   <main>
     <section class="new-tweet">
       <form method="POST" action="/tweets">
+        <span class="err"></span>
+        
         <div>
           <label for="tweet-text">What are you humming about?</label>
         </div>
+        
         <div>
           <textarea name="text" id="tweet-text"></textarea>
         </div>

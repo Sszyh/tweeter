@@ -50,12 +50,20 @@ $(document).ready(function () {
     event.preventDefault();
     let a = $("#tweet-text").val();
     console.log("a:", a);
+    $("textarea").focus(function() {
+      $('.err').hide("fast");
+      $('.err').html('');
+    })
     if (a.length === 0) {
-      alert("Input should not be empty")
+      //alert("Input should not be empty")
+      $('.err').show("fast");
+      $('.err').html('Input should not be empty');
     }
     $.post("/tweets", $(this).serialize(), function () {
       loadTweets();
+    
     });
+  
   });
 
   const loadTweets = function () {
