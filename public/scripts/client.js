@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 const renderTweets = function (tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
@@ -48,8 +42,7 @@ const createTweetElement = function (tweetData) {
 $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
-    let a = $("#tweet-text").val();
-   
+    const a = $("#tweet-text").val();
     $("textarea").focus(function () {
       $('.err').hide("slow");
       $('.err').html('');
@@ -76,5 +69,5 @@ $(document).ready(function () {
       });
   }
 
-  loadTweets();//why it needs to be loaded
+  loadTweets();//render the initial page first time.
 });
