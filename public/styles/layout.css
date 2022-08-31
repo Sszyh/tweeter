@@ -31,10 +31,11 @@ main {
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin: 5%;
 }
 
 .tweet-header {
+  padding-top: 0.4em;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -42,6 +43,7 @@ main {
   background-color: #f4f1ec;
   background-image: none;
   height: 4em;
+  
 }
 
 .img-and-name {
@@ -56,6 +58,8 @@ main {
 .tweet-container {
   width: 100%;
   margin: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
 }
 
 .tweet-footer {
@@ -73,8 +77,8 @@ main {
 }
 
 .tweet-show {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.4em;
+  padding-right: 1.2em;
   border-bottom: 0.2em solid #545149;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -98,7 +102,7 @@ article {
 
 .err {
   display: none;
-  border-color:e63946 ;
+  border-color: e63946;
   border: 0.12em solid;
   font-family: 'Source Sans Pro', sans-serif;
   color: #ef233c;
@@ -112,4 +116,33 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+
+@media only screen and (min-width: 768px) {
+   header {
+    width: 30%;
+    float: left;
+    margin-top: 140px;
+    margin-left: 20px;
+    height: 400px !important;
+  }
+
+  main {
+    width: 54%;
+    margin-top: 130px;
+    float: right;
+  } 
+ 
+  nav {
+    font-family: 'Bungee', cursive;
+    height: 120px;
+    width: 100%;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+  }
 }

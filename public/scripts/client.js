@@ -18,13 +18,13 @@ const createTweetElement = function (tweetData) {
   };
   let $tweet = /* creating the tweet element */
     `<article>
-        <header class="tweet-header">
+        <div class="tweet-header">
           <div class="img-and-name">
             <img src="${tweetData.user.avatars}" height="100%" style="padding-right: 0.4em">
             <p>${tweetData.user.name}</p>
           </div>
           <p class="img-and-name">${tweetData.user.handle}</p>
-        </header>
+        </div>
         <div class="tweet-show">${escape(tweetData.content.text)}
         </div>
         <footer class="tweet-footer">
