@@ -1,3 +1,7 @@
+form {
+  display: none;
+}
+
 .new-tweet {
   display: flex;
   flex-direction: column;

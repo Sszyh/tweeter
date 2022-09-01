@@ -11,4 +11,12 @@ $(document).ready(function () {
       $("output").removeClass("red-counter");
     }
   });
+
+  $(".nav-bar-right").click(function() {
+    $("form").slideToggle("fast",function() {
+      $("textarea").focus();
+    });
+  })
+ 
 });
+
