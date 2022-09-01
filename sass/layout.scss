@@ -3,6 +3,17 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+$color-gray: #545149;
+$color-light-yellow: #f4f1ec;
+$color-blue: #4056A1;
+$color-yellow: #ffd500;
+$color-red: #ef233c;
+$color-white: #FFFFFF;
+$font-bungee: 'Bungee', cursive;
+$font-sans: 'Source Sans Pro', sans-serif;
+
+
 html {
   box-sizing: border-box;
 }
@@ -16,8 +27,9 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
-  color: #545149;
+  color: $color-gray;
   background-color: #f4f1ec;
   font-size: 24px;
 }
@@ -25,6 +37,7 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 main {
   width: 90%;
   display: flex;
@@ -38,9 +51,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #f4f1ec;
+  background-color: $color-light-yellow;
   background-image: none;
   height: 4em;
+  
 }
 
 .img-and-name {
@@ -55,7 +69,7 @@ main {
 .tweet-container {
   width: 100%;
   margin: auto;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font-sans;
   font-size: 20px;
 }
 
@@ -66,7 +80,7 @@ main {
   padding-right: 1em;
   padding-bottom: 0.8em;
   margin: auto;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font-sans;
   font-size: large;
   display: flex;
   flex-direction: row;
@@ -76,21 +90,21 @@ main {
 .tweet-show {
   padding-left: 1.4em;
   padding-right: 1.2em;
-  border-bottom: 0.2em solid #545149;
-  font-family: "Source Sans Pro", sans-serif;
+  border-bottom: 0.2em solid $color-gray;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .fa {
-  color: #4056A1;
+  color: $color-blue;
 }
 
 .fa:hover {
-  color: #ffd500;
+  color: $color-yellow;
 }
 
 article {
   outline-style: solid;
-  outline-color: #545149;
+  outline-color: $color-gray;
   outline-width: 0.2em;
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -101,10 +115,11 @@ article {
   display: none;
   border-color: e63946;
   border: 0.12em solid;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #ef233c;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $color-red;
   padding: 0.5em;
   margin-bottom: 1em;
+
 }
 
 .humming-err {
@@ -114,25 +129,28 @@ article {
   justify-content: space-evenly;
 }
 
+
 @media only screen and (min-width: 768px) {
-  header {
+   header {
     width: 30%;
     float: left;
     margin-top: 140px;
     margin-left: 20px;
     height: 400px !important;
   }
+
   main {
     width: 54%;
     margin-top: 130px;
     float: right;
-  }
+  } 
+ 
   nav {
-    font-family: "Bungee", cursive;
+    font-family: $font-bungee;
     height: 120px;
     width: 100%;
-    background-color: #4056A1;
-    color: #FFFFFF;
+    background-color: $color-blue;
+    color: $color-white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

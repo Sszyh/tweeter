@@ -1,12 +1,17 @@
+$font-bungee: 'Bungee', cursive;
+$font-sans: 'Source Sans Pro', sans-serif;
+$color-white: #FFFFFF;
+
 nav {
-  font-family: "Bungee", cursive;
+  font-family: $font-bungee;
   height: 120px;
   width: 100%;
-  color: #FFFFFF;
+  color: $color-white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+  
 }
 
 .nav-bar-left {
@@ -14,6 +19,7 @@ nav {
   flex-direction: row;
   padding-top: 3em;
   padding-left: 1.5em;
+
 }
 
 .nav-bar-right {
@@ -24,5 +30,7 @@ nav {
   padding-bottom: 1em;
   align-items: center;
   font-size: 80%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font-sans;
+  
 }
+
