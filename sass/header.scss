@@ -1,13 +1,17 @@
 $font-sans: 'Source Sans Pro', sans-serif;
 $color-yellow: #ffd500;
 
-header {
-  height: 520px;
-  font-family: $font-sans;
+@mixin header-position {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+header {
+  @include header-position;
+  height: 520px;
+  font-family: $font-sans;
   background-color: $color-yellow;
   background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */

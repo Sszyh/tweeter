@@ -65,8 +65,6 @@ main {
   }
 }
 
-
-
 .tweet-container {
   width: 100%;
   margin: auto;
@@ -103,8 +101,6 @@ main {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
 article {
   outline-style: solid;
   outline-color: $color-gray;
@@ -122,7 +118,6 @@ article {
   color: $color-red;
   padding: 0.5em;
   margin-bottom: 1em;
-
 }
 
 .humming-err {
@@ -131,7 +126,6 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 
 @media only screen and (min-width: 768px) {
   header {
