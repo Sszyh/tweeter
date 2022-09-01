@@ -30,7 +30,7 @@ html {
 
 body {
   color: $color-gray;
-  background-color: #f4f1ec;
+  background-color: $color-light-yellow;
   font-size: 24px;
 }
 
@@ -54,17 +54,18 @@ main {
   background-color: $color-light-yellow;
   background-image: none;
   height: 4em;
-  
+
+  .img-and-name {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
-.img-and-name {
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 1em;
-  margin-right: 1em;
-}
+
 
 .tweet-container {
   width: 100%;
@@ -85,6 +86,14 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  .fa {
+    color: $color-blue;
+  }
+
+  .fa:hover {
+    color: $color-yellow;
+  }
 }
 
 .tweet-show {
@@ -94,13 +103,7 @@ main {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.fa {
-  color: $color-blue;
-}
 
-.fa:hover {
-  color: $color-yellow;
-}
 
 article {
   outline-style: solid;
@@ -131,7 +134,7 @@ article {
 
 
 @media only screen and (min-width: 768px) {
-   header {
+  header {
     width: 30%;
     float: left;
     margin-top: 140px;
@@ -143,8 +146,8 @@ article {
     width: 54%;
     margin-top: 130px;
     float: right;
-  } 
- 
+  }
+
   nav {
     font-family: $font-bungee;
     height: 120px;

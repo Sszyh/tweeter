@@ -42,8 +42,7 @@ main {
   background-image: none;
   height: 4em;
 }
-
-.img-and-name {
+.tweet-header .img-and-name {
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -72,20 +71,18 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+.tweet-footer .fa {
+  color: #4056A1;
+}
+.tweet-footer .fa:hover {
+  color: #ffd500;
+}
 
 .tweet-show {
   padding-left: 1.4em;
   padding-right: 1.2em;
   border-bottom: 0.2em solid #545149;
   font-family: "Source Sans Pro", sans-serif;
-}
-
-.fa {
-  color: #4056A1;
-}
-
-.fa:hover {
-  color: #ffd500;
 }
 
 article {
