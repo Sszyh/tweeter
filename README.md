@@ -2,7 +2,7 @@
 
 `Tweeter` is a simple, single-page Twitter clone.
 
-This repository is original fork from lighthouse-labs/tweeter, then build upon it to practice HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
+This repository is original forked from lighthouse-labs/tweeter, then built upon it to practice HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
 
 ## **Contents**
 
