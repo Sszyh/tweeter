@@ -2,7 +2,7 @@ const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-
+  $(".tweet-container").empty();
   tweets.map((tweet) => {
     let a = createTweetElement(tweet);
     $(".tweet-container").prepend(a);

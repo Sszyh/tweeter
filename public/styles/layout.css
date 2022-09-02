@@ -121,6 +121,7 @@ article:hover {
   position: fixed;
   top: 85vh;
   right: 10vh;
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {

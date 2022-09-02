@@ -20,7 +20,7 @@ $(document).ready(function() {
   });
   //adding a "return to top" function
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 50) {
       $("#log").fadeIn();
     } else {
       $("#log").fadeOut();
