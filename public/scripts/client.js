@@ -58,6 +58,7 @@ $(document).ready(function() {
     $.post("/tweets", $(this).serialize(), function() {
       loadTweets();
       $("textarea").val("");
+      $(".counter").html(140);
     });
 
   });
