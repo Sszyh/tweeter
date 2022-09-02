@@ -35,10 +35,10 @@ form {
 
 .tw-co {
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0.5em;
-    padding-right: 0.4em;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  padding-right: 0.4em;
 }
 
 textarea {
@@ -48,10 +48,10 @@ textarea {
   border-left: 0px;
   width: 100%;
   background-color: $color-yellow;
-  resize:none;
+  resize: none;
 }
 
-.red-counter{
+.red-counter {
   font-family: $font-bungee;
   color: $color-red;
 }

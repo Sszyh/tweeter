@@ -1,10 +1,15 @@
 //infinite animation to "write a new tweet"
 #animation {
   animation: mymove 1.5s infinite;
-  position:relative;
+  position: relative;
 }
 
 @keyframes mymove {
-  from {top: 0px;}
-  to {top: 10px;}
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 10px;
+  }
 }

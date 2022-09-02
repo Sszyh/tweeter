@@ -1,4 +1,4 @@
-const renderTweets = function (tweets) {
+const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
@@ -9,9 +9,9 @@ const renderTweets = function (tweets) {
   });
 };
 
-const createTweetElement = function (tweetData) {
+const createTweetElement = function(tweetData) {
   //create function to avoid Cross-Site Scripting(XSS)
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -35,19 +35,19 @@ const createTweetElement = function (tweetData) {
             <i class="fa-solid fa-heart fa"></i>
           </div>
         </footer>
-      </article>`
+      </article>`;
   return $tweet;
-}
+};
 
-$(document).ready(function () {
-  $("form").submit(function (event) {
+$(document).ready(function() {
+  $("form").submit(function(event) {
     event.preventDefault();
     const a = $("#tweet-text").val();
     //check error of input nothing or exceed 140.
-    $("textarea").focus(function () {
+    $("textarea").focus(function() {
       $('.err').hide("slow");
       $('.err').html('');
-    })
+    });
     if (a.length === 0) {
       $('.err').slideDown("slow");
       return $('.err').html('🧶🧶🧶  Input should not be empty');
@@ -55,19 +55,19 @@ $(document).ready(function () {
       $('.err').slideDown("slow");
       return $('.err').html('🤐🤐🤐  Input should not be more than 140');
     }
-    $.post("/tweets", $(this).serialize(), function () {
-      loadTweets(); 
+    $.post("/tweets", $(this).serialize(), function() {
+      loadTweets();
       $("textarea").val("");
-    })
+    });
 
   });
   //get request to fetch the tweets data
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax("/tweets", { method: "GET" })
-      .then(function (tweetArr) {
+      .then(function(tweetArr) {
         renderTweets(tweetArr);
       });
-  }
+  };
 
   loadTweets();//render the initial page first time.
 });
