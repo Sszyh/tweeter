@@ -10,7 +10,7 @@ $color-yellow: #ffd500;
 
 header {
   @include header-position;
-  height: 520px;
+  height: 400px;
   font-family: $font-sans;
   background-color: $color-yellow;
   background-image: url("https://www.transparenttextures.com/patterns/black-twill.png");

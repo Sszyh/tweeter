@@ -5,6 +5,9 @@ $color-yellow: #f4f1ec;
 $color-red: red;
 $font-bungee: 'Bungee', cursive;
 
+form {
+  display: none;
+}
 
 .new-tweet {
   display: flex;
@@ -14,6 +17,7 @@ $font-bungee: 'Bungee', cursive;
   margin-bottom: 1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  width: 100%;
 }
 
 .tweet-button {

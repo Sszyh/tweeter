@@ -42,7 +42,8 @@ main {
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  margin: 1.5em;
+  align-items: center;
 }
 
 .tweet-header {
@@ -70,6 +71,7 @@ main {
   margin: auto;
   font-family: $font-sans;
   font-size: 20px;
+
 }
 
 .tweet-footer {
@@ -110,6 +112,10 @@ article {
   margin-bottom: 3em;
 }
 
+article:hover {
+  box-shadow: 8px 10px #898c96;
+}
+
 .err {
   display: none;
   border-color: e63946;
@@ -134,7 +140,7 @@ article {
   right: 10vh;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   header {
     width: 30%;
     float: left;
