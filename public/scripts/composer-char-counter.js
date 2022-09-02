@@ -11,13 +11,27 @@ $(document).ready(function () {
       $("output").removeClass("red-counter");
     }
   });
-  
+
   //slideToggle to control textarea showing or hiding
   $(".nav-bar-right").click(function() {
     $("form").slideToggle("fast",function() {
       $("textarea").focus();
     });
   })
- 
+  //adding a "return to top" function
+  $(window).scroll(function() {
+    //const $a = $("<i>").addClass("fa-solid fa-angles-up");
+    if ($(this).scrollTop() > 100) {
+      console.log("working");
+      $( "#log" ).fadeIn();
+    } else {
+      $( "#log" ).fadeOut();
+    }
+  });
+
+  $("#log").click(function() {
+    //html works for FFX but not Chrome,body works for Chrome but not FFX
+    $("html, body").animate({scrollTop: 0}, 300)
+  })
 });
 

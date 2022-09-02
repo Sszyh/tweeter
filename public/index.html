@@ -3,7 +3,7 @@
 
 <head>
   <!-- Meta Information -->
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width initial-scale=1.0" />
   <title>Tweeter - Home Page</title>
 
   <!-- External CSS -->
@@ -52,9 +52,9 @@
         <span style="font-weight: bolder">Write</span>
         <span style="margin-left: 0.5em;">a new tweet</span>
       </div>
-      
+
       <i class="fa-solid fa-angles-down" style="color: red" id="animation"></i>
-    
+
     </div>
   </nav>
 
@@ -86,9 +86,13 @@
         </div>
       </form>
     </section>
-    <section class="tweet-container">
-      <i class="fa-solid fa-angles-up" style="color: red"></i>
+    <section class="tweet-container" id="target">
+      <div id="log" class="fa-stack fa-2x">
+        <i class="fa-solid fa-circle fa-stack-2x" style="color: brown;"></i>
+        <i class="fa-solid fa-angles-up fa-stack-1x fa-inverse"></i>
+      </div>
     </section>
   </main>
 </body>
+
 </html>

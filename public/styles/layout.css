@@ -111,6 +111,13 @@ article {
   justify-content: space-evenly;
 }
 
+#log {
+  font-size: 1em;
+  position: fixed;
+  top: 85vh;
+  right: 10vh;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     width: 30%;

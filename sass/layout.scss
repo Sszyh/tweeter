@@ -107,7 +107,7 @@ article {
   outline-width: 0.2em;
   padding-right: 0.5em;
   padding-left: 0.5em;
-  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .err {
@@ -127,11 +127,18 @@ article {
   justify-content: space-evenly;
 }
 
+#log {
+  font-size: 1em;
+  position: fixed;
+  top: 85vh;
+  right: 10vh;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     width: 30%;
     float: left;
-    margin-top: 140px;
+    margin-top: 170px;
     margin-left: 20px;
     height: 400px !important;
   }
