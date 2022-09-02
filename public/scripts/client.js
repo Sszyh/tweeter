@@ -43,6 +43,7 @@ $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
     const a = $("#tweet-text").val();
+    //check error of input nothing or exceed 140.
     $("textarea").focus(function () {
       $('.err').hide("slow");
       $('.err').html('');
@@ -60,9 +61,8 @@ $(document).ready(function () {
     })
 
   });
-
+  //get request to fetch the tweets data
   const loadTweets = function () {
-    console.log("load tweet!");
     $.ajax("/tweets", { method: "GET" })
       .then(function (tweetArr) {
         renderTweets(tweetArr);

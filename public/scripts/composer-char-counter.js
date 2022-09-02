@@ -20,9 +20,7 @@ $(document).ready(function () {
   })
   //adding a "return to top" function
   $(window).scroll(function () {
-    //const $a = $("<i>").addClass("fa-solid fa-angles-up");
     if ($(this).scrollTop() > 100) {
-      console.log("working");
       $("#log").fadeIn();
     } else {
       $("#log").fadeOut();
