@@ -5,7 +5,13 @@
 This repository is original fork from lighthouse-labs/tweeter, then build upon it to practice HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.
 
 ## **Contents**
-  
+
+  - [**Features**](#features)
+    - [The feature when page width more than 1024 pixels](#the-feature-when-page-width-more-than-1024-pixels)
+    - [The feature when page width under 1024 pixels](#the-feature-when-page-width-under-1024-pixels)
+  - [**Dependencies**](#dependencies)
+  - [**Getting Started**](#getting-started)
+
 ## **Features**
 ### The feature when page width more than 1024 pixels
 !["feature-gif"](public/images/show.gif)
